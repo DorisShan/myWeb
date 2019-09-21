@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    .wrapper{
+        width: 100%;
+        min-width: 375px;
+        height: 100%;
+        .nav{
+            z-index: 100;
+            background-color: #fff;
+            width: 30%;
+            height: 100%;
+            position: fixed;
+            box-shadow: 2px 0px 3px rgba(0, 0, 0, .1);
+            .header{
+                width: 100%;
+                height: 96px;
+                // line-height: 96px;
+                padding: 24px;
+                box-sizing: border-box;
+                // display: flex;
+                // justify-content: space-between;
+                // border: 1px solid #000;
+                img{
+                    float: left;
+                    width: 76px;
+                    height: 40px;
+                }
+                .more_menu{
+                    float: right;
+                    width: 32px;
+                    height: 40px;
+                    // border: 1px solid #000;
+                    background-image: url(../image/more.png);
+                    background-size: 100% 100%;
+                    cursor: pointer;
+                    transition: all .2s;
+                    &:hover{
+                        background-image: url(../image/more_menu.png);
+                    }
+                }
+                .menu{
+                    float: right;
+                    display: flex;
+                    padding: 10px 15px 15px 15px;
+                    // border: 1px solid #000;
+                    li{
+                        font-size: 14px;
+                        font-weight: 700;
+                        padding: 0 8px;
+                        transition: all .2s;
+                        // border: 1px solid #000;
+                        &:hover{
+                            transform: scale(1.1, 1.1);
+                        }
+                        a{
+                            padding: 6px 0;
+                            color: rgba(0, 0, 0, .7);
+                        }
+                        
+                    }
+                }
+            }
+            .body{
+                width: 100%;
+                height: calc(100% - 96px);
+                // background-color: pink;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .title{
+                    font-size: 24px;
+                    font-weight: 700;
+                }
+                .footer{
+                    margin-top: 24px;
+                    display: flex;
+                    .github{
+                        img{
+                            display: inline-block;
+                            width:48px;
+                            height: 48px;
+                            border-radius: 50%;
+                        }
+                    }
+                    .download_resume{
+                        margin-left: 20px;
+                        width: 120px;
+                        height: 48px;
+                        border: 2px solid rgb(0, 168, 98);
+                        border-radius: 50px;
+                        text-align: center;
+                        line-height: 48px;
+                        font-weight: bold;
+                        color: rgb(0, 168, 98);
+                        font-size: 14px;
+                        cursor: pointer;
+                    }
+                }
+            }
+            
+        }
+        .content{
+            width: 70%;
+            float: right;
+            .resume_box{
+                width: 100%;
+                // margin-bottom: 128px;
+                .resume_back{
+                    width: 100%;
+                    height: 444px;
+                    background-image: url(../image/farm.jpeg);
+                    background-size: 100% 100%;
+                    position: relative;
+                    &::after{
+                        content: '';
+                        display: inline-block;
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background-color: rgba(180, 180, 180, .2);
+                    }
+                    #my_resume{
+                        width: 80%;
+                        height: 400px;
+                        position: absolute;
+                        left: 50%;
+                        margin-left: -40%;
+                        top: 80px;
+                        background-color: #fff;
+                        z-index: 99;
+                        box-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
+                        padding: 56px 40px;
+                        box-sizing: border-box;
+                        display: flex;
+                        transition: all .3s;
+                        position: relative;
+                        &:hover{
+                            transform: scale(1.02, 1.02);
+                            box-shadow: 1px 1px 3px rgba(0, 0, 0, .5),
+                                        4px 4px 8px rgba(0, 0, 0, .3);
+                        }
+                        .resume_pic{
+                            width: 224px;
+                            height: 100%;
+                            margin-right: 24px;
+                            background-image: url(../image/my_pic.jpg);
+                            background-size: 100% 100%;
+                        }
+                        .resume_con{
+                            flex: 1;
+                            p{
+                                margin: 11px 0;
+                            }
+                            .resume_header{
+                                border-bottom: 2px solid rgba(0, 0, 0, .1);
+                                .name{
+                                    font-size: 25px;
+                                }
+                                .position{
+                                    font-size: 19px;
+                                    font-weight: 700;
+                                }
+                            }
+                            .resume_mes{
+                                margin-top: 24px;
+                                font-size: 16px;
+                                p{
+                                    position: relative;
+                                }
+                                span{
+                                    position: absolute;
+                                    left: 110px;
+                                    color: #999;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .none_one{
+                display: none;
+            }
+            #skill_box{
+                width: 80%;
+                margin: 100px auto;
+                text-align: center;
+                .skill_title{
+                    height: 80px;
+                    line-height: 80px;
+                    font-size: 28px;
+                    font-weight: 1000;
+                    color: rgb(61, 68, 81);
+                }
+                .skill_con{
+                    width: 100%;
+                    height: 192x;
+                    // border: 1px solid #000;
+                    // display: flex;
+                    .skill_logo{
+                        width:50%;
+                        height: 100%;
+                        display: flex;
+                        // border: 1px solid #000;
+                        flex-wrap: wrap;
+                        float: left;
+                        .skill_pic{
+                            // border: 1px solid #000;
+                            display: inline-block;
+                            width: 64px;
+                            height: 64px;
+                            margin: 11px;
+                            background-size: 80%;
+                            background-repeat: no-repeat;
+                            background-position: center center;
+                        }
+                        .s_html{
+                            background-image: url(../image/html.png);
+                        }
+                        .s_css{
+                            background-image: url(../image/css.png);
+                        }
+                        .s_js{
+                            background-image: url(../image/js.png);
+                        }
+                        .s_jq{
+                            background-image: url(../image/jquery.gif);
+                        }
+                        .s_vue{
+                            background-image: url(../image/vue.jpg);
+                        }
+                        .s_min{
+                            background-image: url(../image/min.png);
+                        }
+                        .s_others{
+                            background-image: url(../image/others.png);
+                        }
+                    }
+                    .skill_intro{
+                        width: 50%;
+                        height: 100%;
+                        float: right;
+                        padding: 16px 28.8px;
+                        box-sizing: border-box;
+                        h4{
+                            height: 56px;
+                            line-height: 56px;
+                            font-size: 19px;
+                        }
+                        p{
+                            font-size: 13px;
+                            line-height: 22px;
+                            text-align: left;
+                            text-indent: 2em;
+                        }
+                    }
+                }
+            }
+            #portfolio{
+                width: 100%;
+                height: 560px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .wrapper .nav div.body{
+        display: none;
+    }
+   .wrapper nav.nav{
+       width: 100%;
+       height:  100px;
+   }
+   .wrapper section.content{
+       width: 100%;
+       margin-top: 100px;
+   }
+   .wrapper .content section.none_one{
+        width: 100%;
+        margin-top: 100px;
+        display: inline-block;
+        text-align: center;
+        .github{
+            img{
+                display: inline-block;
+                width:48px;
+                height: 48px;
+                border-radius: 50%;
+                vertical-align: middle;
+            }
+        }
+        .download_resume{
+            display: inline-block;
+            margin-left: 20px;
+            width: 120px;
+            height: 48px;
+            border: 2px solid rgb(0, 168, 98);
+            border-radius: 50px;
+            text-align: center;
+            line-height: 48px;
+            font-weight: bold;
+            color: rgb(0, 168, 98);
+            font-size: 14px;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (max-width: 760px) {
+    .wrapper .content .resume_box .resume_back #my_resume div.resume_pic{
+        width: 70px;
+        height: 80px;
+        border-radius: 50%;
+        position: absolute;
+        right: 30px;
+        top: 56px;
+    }
+}
+
+@media (max-width: 460px) {
+    .wrapper .content #skill_box .skill_con .skill_logo span.skill_pic{
+        width: 56px;
+        height: 56px;
+    }
+    .wrapper .content .resume_box .resume_back #my_resume .resume_con .resume_mes P span{
+        left: 90px;
+    }
+}
+
+
