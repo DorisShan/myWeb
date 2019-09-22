@@ -79,6 +79,15 @@ html, body{
                 .title{
                     font-size: 24px;
                     font-weight: 700;
+                    .resume_icon{
+                        display: inline-block;
+                        vertical-align: middle;
+                        width: 30px;
+                        height: 30px;
+                        // border: 1px solid #000;
+                        background-image: url(../image/resume-icon.png);
+                        background-size: 100% 100%;
+                    }
                 }
                 .footer{
                     margin-top: 24px;
@@ -89,6 +98,10 @@ html, body{
                             width:48px;
                             height: 48px;
                             border-radius: 50%;
+                            transition: transform .2s;
+                            &:hover{
+                                transform: scale(1.1, 1.1);
+                            }
                         }
                     }
                     .download_resume{
@@ -103,6 +116,10 @@ html, body{
                         color: rgb(0, 168, 98);
                         font-size: 14px;
                         cursor: pointer;
+                        transition: transform .2s;
+                        &:hover{
+                            transform: scale(1.1, 1.1);
+                        }
                     }
                 }
             }
@@ -197,10 +214,6 @@ html, body{
                 margin: 100px auto;
                 text-align: center;
                 background-color: #fff;
-                // transition: transform .3s;
-                // &:hover{
-                //     transform: scale(1.01, 1.01);
-                // }
                 .skill_title{
                     height: 80px;
                     line-height: 80px;
@@ -227,7 +240,6 @@ html, body{
                         flex-wrap: wrap;
                         float: left;
                         .skill_pic{
-                            // border: 1px solid #000;
                             display: inline-block;
                             width: 64px;
                             height: 64px;
@@ -250,7 +262,7 @@ html, body{
                             background-image: url(../image/js.png);
                         }
                         .s_jq{
-                            background-image: url(../image/jquery.gif);
+                            background-image: url(../image/jquery.png);
                         }
                         .s_vue{
                             background-image: url(../image/vue.jpg);
@@ -268,17 +280,22 @@ html, body{
                         float: right;
                         padding: 16px 28.8px;
                         box-sizing: border-box;
-                        // background-color: pink;
-                        h4{
-                            height: 56px;
-                            line-height: 56px;
-                            font-size: 19px;
-                        }
-                        p{
-                            font-size: 13px;
-                            line-height: 22px;
-                            text-align: left;
-                            text-indent: 2em;
+                        li{
+                            display: none;
+                            &.skill_active{
+                                display: inline-block;
+                            }
+                            h4{
+                                height: 36px;
+                                line-height: 36px;
+                                font-size: 19px;
+                            }
+                            p{
+                                font-size: 13px;
+                                line-height: 22px;
+                                text-align: left;
+                                text-indent: 2em;
+                            }
                         }
                     }
                 }
@@ -310,14 +327,53 @@ html, body{
                             width: 320px;
                             height: 200px;
                             margin: 12px;
-                            border: 1px solid #000;
+                            overflow: hidden;
+                            position: relative;
+                            box-shadow: 1px 1px 3px rgba(0, 0, 0, .2);
+                            &:hover{
+                                .port_intro{
+                                    bottom: 0;
+                                }
+                            }
                             .port_back{
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                img{
-                                    width: 100%;
-                                    // height: 100%;
+                                display: inline-block;
+                                width: 100%;
+                                height: 100%;
+                                background-size: contain;
+                                background-repeat: no-repeat;
+                                background-position: center center;
+                                padding: 5px 10px;
+                                box-sizing: border-box;
+                                background-clip: content-box;
+                            }
+                            .res{
+                                background-image: url(../image/resume-maker.png);
+                            }
+                            .music{
+                                background-image: url(../image/music-player.png)
+                            }
+                            .port_intro{
+                                width: 100%;
+                                height: 54px;
+                                background-color: rgba(0, 0, 0, .3);
+                                position: absolute;
+                                bottom: -54px;
+                                color: #eee;
+                                text-align: left;
+                                padding: 10px;
+                                font-size: 14px;
+                                box-sizing: border-box;
+                                transition: all .3s;
+                                .title{
+                                    font-weight: 700;
+                                    a{
+                                        font-weight: 500;
+                                        text-decoration: underline;
+                                    }
+                                }
+                                .sub_title{
+                                    font-size: 13px;
+                                    margin-top: 4px;
                                 }
                             }
                         }

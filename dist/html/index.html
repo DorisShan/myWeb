@@ -1,1 +1,169 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>Document</title><link rel="stylesheet" href="../css/index.css"></head><body><div class="wrapper"><nav class="nav"><header class="header"> <img src="../image/my_name.png" alt=""><div class="more_menu"></div><ul class="menu"><li> <a href="#my_resume">关于</a></li><li> <a href="#skill_box">专业技能</a></li><li> <a href="">作品集</a></li></ul></header><div class="body"><div class="title"> 心情惬意，来杯咖啡吧🥤</div><div class="footer"> <a href="https://github.com/DorisShan" class="github" target="blank"><img src="../image/github.png" alt=""></a><div class="download_resume">下载PDF简历</div></div></div></nav><section class="content"><section class="resume_box"><div class="resume_back"><div id="my_resume"><div class="resume_pic"></div><div class="resume_con"><div class="resume_header"><p class="name">单思欣</p><p class="position">前端开发工程师</p></div><div class="resume_mes"><p> 年龄: <span>27</span></p><p> 性别： <span>女</span></p><p> 所在城市： <span>广州</span></p><p> 邮箱： <span>dorisssx@163.com</span></p><p> 电话： <span>156********</span></p></div></div></div></div></section><section class="none_one"> <a href="https://github.com/DorisShan" class="github" target="blank"><img src="../image/github.png" alt=""></a><div class="download_resume">下载PDF简历</div></section><section id="skill_box"><p class="skill_title">专业技能</p><div class="skill_con"><div class="skill_logo"><span class="skill_pic s_html"></span><span class="skill_pic s_css"></span><span class="skill_pic s_js"></span><span class="skill_pic s_jq"></span><span class="skill_pic s_vue"></span><span class="skill_pic s_min"></span><span class="skill_pic s_others"></span></div><div class="skill_intro"><h4>HTML</h4><p>掌握 HTML 元素的使用，理解其语义化标签的作用并能够写出结构清晰的页面。掌握 HTML5 新元素如 canvas 、 nav 及 WebStorage API 等的使用。</p></div></div></section><section id="portfolio_box"><p class="port_title">作品集</p><div class="port_con"><ul><li><div class="port_back"><div class="img"></div></div><div class="port_intro"></div></li><li><div class="port_back"></div><div class="port_intro"></div></li><li><div class="port_back"></div><div class="port_intro"></div></li><li><div class="port_back"></div><div class="port_intro"></div></li></ul></div></section></section></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="nav">
+            <header class="header">
+                <img src="../image/my_name.png" alt="">
+                <div class="more_menu"></div>
+                <ul class="menu">
+                    <li>
+                        <a href="#my_resume">关于</a>
+                    </li>
+                    <li>
+                        <a href="#skill_box">专业技能</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio_box">作品集</a>
+                    </li>
+                </ul>
+            </header>
+            <div class="body">
+                <div class="title">
+                    心情惬意，来份简历吧~
+                    <span class="resume_icon"></span>
+                </div>
+                <div class="footer">
+                    <a href="https://github.com/DorisShan" class="github" target="blank">
+                        <img src="../image/github.png" alt="">
+                    </a>
+                    <a href="/doris-resume.pdf" class="download_resume" download="前端开发-单思欣">下载PDF简历</a>
+                </div>
+            </div>
+        </nav>
+        <section class="content">
+            <section class="resume_box">
+                <div class="resume_back">
+                    <div id="my_resume">
+                        <div class="resume_pic"></div>
+                        <div class="resume_con">
+                            <div class="resume_header">
+                                <p class="name">单思欣</p>
+                                <p class="position">前端开发工程师</p>
+                            </div>
+                            <div class="resume_mes">
+                                <p>
+                                    年龄:
+                                    <span>27</span>
+                                </p>
+                                <p>
+                                    性别：
+                                    <span>女</span>
+                                </p>
+                                <p>
+                                    所在城市：
+                                    <span>广州</span>
+                                </p>
+                                <p>
+                                    邮箱：
+                                    <span>dorisssx@163.com</span>
+                                </p>
+                                <p>
+                                    电话：
+                                    <span>156********</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="none_one">
+                <a href="https://github.com/DorisShan" class="github" target="blank">
+                    <img src="../image/github.png" alt="">
+                </a>
+                <div class="download_resume">下载PDF简历</div>
+            </section>
+            <section id="skill_box">
+                <p class="skill_title">专业技能</p>
+                <div class="skill_con">
+                    <div class="skill_logo">
+                        <span class="skill_pic s_html" data-id="i_html"></span>
+                        <span class="skill_pic s_css" data-id="i_css"></span>
+                        <span class="skill_pic s_js" data-id="i_js"></span>
+                        <span class="skill_pic s_jq" data-id="i_jq"></span>
+                        <span class="skill_pic s_vue" data-id="i_vue"></span>
+                        <span class="skill_pic s_min" data-id="i_min"></span>
+                        <span class="skill_pic s_others" data-id="i_others"></span>
+                    </div>
+                    <ul class="skill_intro">
+                        <li id="i_html" class="skill_active">
+                            <h4>HTML</h4>
+                            <p>掌握 HTML 元素的使用，理解其语义化标签的作用并能够写出结构清晰的页面。掌握 HTML5 新元素如 canvas 、 nav 及 WebStorage API 等的使用。</p>
+                        </li>
+                        <li id="i_css">
+                            <h4>CSS</h4>
+                            <p>掌握 CSS 盒模型、媒体查询等的使用，此外熟练使用 CSS3 动画、转换、过渡、弹性盒子布局、盒阴影等，能够利用 CSS 布局网页及实现精美的效果。</p>
+                        </li>
+                        <li id="i_js">
+                            <h4>JavaScript</h4>
+                            <p>掌握 JavaScript ，如作用域、闭包、 DOM 操作等。能够使用 ES6 语法，如 let 、 const 、 箭头函数、模板字面量、解构赋值、模块、类和 Promise 等。</p>
+                        </li>
+                        <li id="i_jq">
+                            <h4>jQuery</h4>
+                            <p>熟悉 jQuery 常用 API 的使用，如 Ajax 、 DOM 操作相关、特效、事件等。曾使用原生 JavaScript 封装过简易版的 jQuery.ajax() 。查看源码</p>
+                        </li>
+                        <li id="i_vue">
+                            <h4>Vue</h4>
+                            <p>使用 Vue 开发 PC 端宸铭传媒运营系统，其中使用 Vue Router 搭建路由和 Vuex 管理状态。</p>
+                        </li>
+                        <li id="i_min">
+                            <h4>小程序开发</h4>
+                            <p>有小程序开发经验。微信搜索“勾勾TODO”或扫描二维码</p>
+                        </li>
+                        <li id="i_others">
+                            <h4>其他</h4>
+                            <p>理解 MVC 、 MVVM 思想，并尝试利用 MVC 思想组织过 JS 代码；使用 Less 动态开发 CSS ，懂得嵌套规则、父选择器 & 、属性嵌套、插值语句、变量、混合等的使用；掌握 HTTP 基础；了解 Webpack 的基本使用。</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section id="portfolio_box">
+                <p class="port_title">作品集</p>
+                <div class="port_con">
+                    <ul>
+                        <li>
+                            <a target="blank" href="https://dorisshan.github.io/my-resume/" class="port_back res"></a>
+                            <div class="port_intro">
+                                <p class="title">
+                                    简历生成器 |
+                                    <a>view source</a>
+                                </p>
+                                <p class="sub_title">使用jQuery/Promis实现动态绘制Markdown简历</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a target="blank" href="https://dorisshan.github.io/musicPlayer/dist/html/index.html" class="port_back music"></a>
+                            <div class="port_intro">
+                                    <p class="title">
+                                        移动端音乐播放器 |
+                                        <a>view source</a>
+                                    </p>
+                                    <p class="sub_title">使用Zepto/gulp实现音频播放切歌调整进度等功能</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="port_back"></div>
+                            <div class="port_intro"></div>
+                        </li>
+                        <li>
+                            <div class="port_back"></div>
+                            <div class="port_intro"></div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+    </div>
+
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../js/index.js"></script>
+
+</body>
+</html>
