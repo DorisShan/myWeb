@@ -21,7 +21,7 @@ gulp.task('html', function () {
     var page = gulp.src(folder.src + 'html/*')
         .pipe(connect.reload())
         if(!devMod){
-            page.pipe(htmlClean())
+            // page.pipe(htmlClean())
         }
         page.pipe(gulp.dest(folder.dist + "html/"))
 })
