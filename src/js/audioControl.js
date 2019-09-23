@@ -3,7 +3,7 @@
     function audioManager () {
         this.oAudio = new Audio();
         this.oAudio.src = '../mayDay.mp3';
-        this.oAudio.status = 'pause';
+        this.status = 'pause';
         
     }
 
@@ -14,6 +14,7 @@
         play: function () {
             this.status = 'play';
             this.oAudio.play();
+            console.log(this.status);
         },
         pause: function () {
             this.status = 'pause';

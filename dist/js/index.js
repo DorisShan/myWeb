@@ -21,11 +21,11 @@ var deg = 0;
         })
         $('.melody').on('click', function () {
 
-            if(root.audioManager.oAudio.status == 'pause'){
+            if(root.audioManager.status == 'pause'){
                 root.audioManager.play();
                 rotated();
             }else{
-                root.audioManager.oAudio.pause();
+                root.audioManager.pause();
                 clearInterval(ro_timer);
             }
         })
