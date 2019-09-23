@@ -5,7 +5,7 @@ var deg = 0;
 (function ($, root) {
 
     function init () {
-        root.audioManager.load();
+        // root.audioManager.load();
         root.audioManager.play();
         bindEvent();
         rotated();
@@ -35,7 +35,6 @@ var deg = 0;
         ro_timer = setInterval(function () {
             $('.melody').css({'transform': 'rotateZ(' + deg + 'deg)'});
             deg += .5;
-            deg = deg > 360 ? deg % 360 : deg;
         }, 20)
 
     }

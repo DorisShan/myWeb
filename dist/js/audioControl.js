@@ -8,16 +8,18 @@
     }
 
     audioManager.prototype = {
-        load: function () {
-            this.oAudio.load();
-        },
+        // load: function () {
+        //     this.oAudio.load();
+        // },
         play: function () {
             this.status = 'play';
             this.oAudio.play();
+            console.log(this.status);
         },
         pause: function () {
             this.status = 'pause';
             this.oAudio.pause();
+            console.log(this.status);
         }
     }
 
