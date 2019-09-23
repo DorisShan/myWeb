@@ -36,6 +36,14 @@ body .wrapper .nav .header img {
   float: left;
   width: 76px;
   height: 40px;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+html .wrapper .nav .header img:hover,
+body .wrapper .nav .header img:hover {
+  -webkit-transform: skewX(40deg);
+          transform: skewX(40deg);
 }
 html .wrapper .nav .header .more_menu,
 body .wrapper .nav .header .more_menu {
@@ -96,6 +104,14 @@ body .wrapper .nav .body .title .resume_icon {
   height: 30px;
   background-image: url(../image/resume-icon.png);
   background-size: 100% 100%;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+html .wrapper .nav .body .title .resume_icon:hover,
+body .wrapper .nav .body .title .resume_icon:hover {
+  -webkit-transform: rotateZ(360deg);
+          transform: rotateZ(360deg);
 }
 html .wrapper .nav .body .footer,
 body .wrapper .nav .body .footer {

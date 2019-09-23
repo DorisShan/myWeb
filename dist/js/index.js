@@ -8,6 +8,7 @@ var deg = 0;
         root.audioManager.load();
         root.audioManager.play();
         bindEvent();
+        rotated();
     }
     init();
 
