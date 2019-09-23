@@ -6,6 +6,7 @@ var deg = 0;
 
     function init () {
         root.audioManager.load();
+        root.audioManager.play();
         bindEvent();
     }
     init();
