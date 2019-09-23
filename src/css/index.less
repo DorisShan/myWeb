@@ -172,7 +172,7 @@ html, body{
                             width: 224px;
                             height: 100%;
                             margin-right: 24px;
-                            background-image: url(../image/my_pic.jpg);
+                            background-image: url(../image/avatar.png);
                             background-size: 100% 100%;
                         }
                         .resume_con{
@@ -202,6 +202,26 @@ html, body{
                                     color: #999;
                                 }
                             }
+                        }
+                    }
+                    .melody{
+                        display: inline-block;
+                        width: 36px;
+                        height: 36px;
+                        // border: 1px solid #000;
+                        position :absolute;
+                        top: 32px;
+                        right: 32px;
+                        border-radius: 50%;
+                        background-image: url(../image/melody.png);
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        cursor: pointer;
+                        z-index: 100;
+                        transition: transform .2s;
+                        &:hover{
+                            transform: scale(1.1, 1.1);
                         }
                     }
                 }

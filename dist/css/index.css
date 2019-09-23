@@ -195,7 +195,7 @@ body .wrapper .content .resume_box .resume_back #my_resume .resume_pic {
   width: 224px;
   height: 100%;
   margin-right: 24px;
-  background-image: url(../image/my_pic.jpg);
+  background-image: url(../image/avatar.png);
   background-size: 100% 100%;
 }
 html .wrapper .content .resume_box .resume_back #my_resume .resume_con,
@@ -233,6 +233,30 @@ body .wrapper .content .resume_box .resume_back #my_resume .resume_con .resume_m
   position: absolute;
   left: 110px;
   color: #999;
+}
+html .wrapper .content .resume_box .resume_back .melody,
+body .wrapper .content .resume_box .resume_back .melody {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  border-radius: 50%;
+  background-image: url(../image/melody.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+  z-index: 100;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+html .wrapper .content .resume_box .resume_back .melody:hover,
+body .wrapper .content .resume_box .resume_back .melody:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
 }
 html .wrapper .content .none_one,
 body .wrapper .content .none_one {
