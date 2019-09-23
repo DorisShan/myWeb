@@ -14,7 +14,6 @@
         play: function () {
             this.status = 'play';
             this.oAudio.play();
-            console.log(this.status);
         },
         pause: function () {
             this.status = 'pause';

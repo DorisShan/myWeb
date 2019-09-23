@@ -475,6 +475,34 @@ body .wrapper .content #portfolio_box .port_con ul li .port_intro .sub_title {
   font-size: 13px;
   margin-top: 4px;
 }
+@-webkit-keyframes resume_ro {
+  0% {
+    -webkit-transform: rotateZ(-80deg);
+            transform: rotateZ(-80deg);
+  }
+  50% {
+    -webkit-transform: rotateZ(80deg);
+            transform: rotateZ(80deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(-80deg);
+            transform: rotateZ(-80deg);
+  }
+}
+@keyframes resume_ro {
+  0% {
+    -webkit-transform: rotateZ(-80deg);
+            transform: rotateZ(-80deg);
+  }
+  50% {
+    -webkit-transform: rotateZ(80deg);
+            transform: rotateZ(80deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(-80deg);
+            transform: rotateZ(-80deg);
+  }
+}
 @media (max-width: 1024px) {
   .wrapper .nav div.body {
     display: none;

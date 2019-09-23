@@ -91,6 +91,7 @@ html, body{
                         // border: 1px solid #000;
                         background-image: url(../image/resume-icon.png);
                         background-size: 100% 100%;
+                        // animation: resume_ro 6s ease alternate infinite;
                         transition: transform .3s;
                         &:hover{
                             transform: rotateZ(360deg);
@@ -409,6 +410,18 @@ html, body{
                 }
             }
         }
+    }
+}
+
+@keyframes resume_ro{
+    0%{
+        transform: rotateZ(-80deg);
+    }
+    50%{
+        transform: rotateZ(80deg);
+    }
+    100%{
+        transform: rotateZ(-80deg);
     }
 }
 
